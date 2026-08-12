@@ -1,0 +1,22 @@
+[project]
+name = "tech-marketplace"
+version = "1.0.0"
+description = "Generates the Technology Analytics Marketplace dashboard as a customizable, self-contained HTML file."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "jinja2>=3.0",
+]
+
+[project.scripts]
+tech-marketplace = "tech_marketplace.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["tech_marketplace*"]
+
+[tool.setuptools.package-data]
+tech_marketplace = ["templates/*.j2"]

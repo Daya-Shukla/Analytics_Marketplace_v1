@@ -1,0 +1,45 @@
+{
+  "branding": {
+    "browser_title": "Contoso Analytics Marketplace",
+    "eyebrow": "Contoso Self-Service Analytics",
+    "hero_title": "Find the right report or dashboard without knowing where it lives.",
+    "hero_description": "Search by dashboard name, business question, KPI, domain or capability.",
+    "logo_url": "https://contoso.example/assets/logo-white.svg",
+    "favicon": "https://contoso.example/assets/favicon.ico",
+    "footer_text": "Contoso Technology Analytics Marketplace \u2014 generated automatically."
+  },
+  "theme": {
+    "brand": "#8764b8",
+    "brand_dark": "#5b3d85",
+    "font_family": "'Inter', 'Segoe UI', Arial, sans-serif"
+  },
+  "icons": {
+    "search": "\ud83d\udd0d",
+    "open_arrow": "\u2197",
+    "star": "\u2b50",
+    "avatar_gradient_start": "#8764b8",
+    "avatar_gradient_end": "#c4a6e0"
+  },
+  "search": {
+    "placeholder": "Ask a question, e.g. What dashboard shows cloud spend?",
+    "clear_label": "Reset",
+    "prompts": [
+      "What dashboard shows application outages?",
+      "Show cloud spend and savings opportunities",
+      "Find security vulnerability reporting"
+    ]
+  },
+  "labels": {
+    "results_heading": "Matching Reports & Dashboards",
+    "recommended_heading": "Recommended for you",
+    "popular_heading": "Trending dashboards",
+    "owners_heading": "Team contacts"
+  },
+  "data": {
+    "base_url": "https://contoso.example/reports",
+    "top_match_count": 3,
+    "recommended_count": 4,
+    "popular_count": 5,
+    "owners_count": 5
+  }
+}

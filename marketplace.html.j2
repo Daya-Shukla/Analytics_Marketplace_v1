@@ -1,0 +1,52 @@
+"""
+tech_marketplace
+=================
+
+A small, self-contained Python toolkit that generates the
+"Technology Analytics Marketplace" self-service report/dashboard
+catalog as a single, offline-friendly HTML file.
+
+Why this exists
+----------------
+The original artifact was a hand-written HTML file with inline CSS
+and JavaScript. That is great for a one-off demo, but painful to
+maintain: every rebrand (colors, logo, wording, icons) or every data
+refresh (adding/removing dashboards) meant hand-editing markup.
+
+This package turns that HTML file into a *template* driven by three
+simple, swappable inputs:
+
+1. ``AppConfig``  - branding, theme colors, icon glyphs, link/URL
+   behavior and on-page copy (search placeholder, button labels,
+   panel headings, etc).
+2. ``Report`` records - the catalog of dashboards/reports to list,
+   loadable from Python literals, JSON, or CSV.
+3. A Jinja2 HTML template (``templates/marketplace.html.j2``) that
+   renders both of the above into a polished, interactive, single
+   file HTML page (search, filtering, hover previews, recommendation
+   rail, all client-side, no server required).
+
+Quick start
+-----------
+    from tech_marketplace import build_dashboard
+
+    build_dashboard(output_path="dashboard.html")
+
+Everything is customizable without touching the template or CSS -
+see ``config.example.json`` and ``reports.example.json`` for the
+full set of knobs, and README.md for a guided tour.
+"""
+
+from .models import Report, AppConfig
+from .renderer import MarketplaceRenderer, build_dashboard
+from .data_source import load_reports
+
+__all__ = [
+    "Report",
+    "AppConfig",
+    "MarketplaceRenderer",
+    "build_dashboard",
+    "load_reports",
+]
+
+__version__ = "1.0.0"

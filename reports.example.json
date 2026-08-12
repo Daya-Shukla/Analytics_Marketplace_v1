@@ -1,0 +1,34 @@
+[
+  {
+    "id": "customer-experience",
+    "name": "Customer Experience Pulse",
+    "domain": "Customer",
+    "owner": "CX Analytics",
+    "contact": "cx-analytics@contoso.example",
+    "platform": "Tableau",
+    "last_refresh": "1 hour ago",
+    "views": 1520,
+    "rating": 4.6,
+    "accent": "#0f6cbd",
+    "description": "NPS, CSAT, support ticket trends and customer sentiment across channels.",
+    "keywords": ["nps", "csat", "customer", "sentiment", "support", "tickets"],
+    "tags": ["Customer", "Experience", "Support"],
+    "url": "customer-experience-pulse"
+  },
+  {
+    "id": "revenue-ops",
+    "name": "Revenue Operations Overview",
+    "domain": "Finance",
+    "owner": "RevOps",
+    "contact": "revops@contoso.example",
+    "platform": "Power BI",
+    "last_refresh": "30 minutes ago",
+    "views": 2010,
+    "rating": 4.7,
+    "accent": "#107c10",
+    "description": "Pipeline, bookings, churn and forecast accuracy across regions.",
+    "keywords": ["revenue", "pipeline", "bookings", "churn", "forecast"],
+    "tags": ["Finance", "Revenue", "Forecast"],
+    "url": "revenue-operations-overview"
+  }
+]
